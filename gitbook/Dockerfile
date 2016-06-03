@@ -7,7 +7,7 @@ ARG VERSION=2.2.0
 LABEL version=$VERSION
 
 RUN sudo apt-get update -y &&\
-	sudo apt-get install -y nodejs npm &&\
+	sudo apt-get install -y nodejs npm git &&\
 	ln -s /usr/bin/nodejs /usr/bin/node
 
 RUN sudo npm install --global gitbook-cli &&\
